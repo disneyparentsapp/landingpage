@@ -297,83 +297,104 @@ footer {
     padding: 10px 0;
   }
 }
-.home .intro .opacityadd {
-  opacity: 0.5;
-}
 .home .intro h2 {
+  border-top: 1px solid #97f9f9;
   padding: 15px;
 }
-.home .intro p {
-  padding: 0 15px;
+.home .intro h3 {
+  margin-top: 0px;
 }
-.home .space-images {
+@media (max-width: 500px) {
+  .home .intro h3 {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.home .intro p {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.home .character-images {
   flex-wrap: wrap;
   display: flex;
   width: 100%;
+  border-top: 1px solid #97f9f9;
 }
 @media (max-width: 500px) {
-  .home .space-images .tiana {
+  .home .character-images .tiana {
     display: none;
   }
-  .home .space-images .dead {
+  .home .character-images .dead {
     display: none;
   }
-  .home .space-images .ariel {
+  .home .character-images .ariel {
     width: 100%;
     padding: 10px;
   }
 }
-.home .space-images img {
+.home .character-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+.home .multiple-passes {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.home .multiple-passes h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.home .multiple-passes p {
   margin-top: 13px;
 }
-.home .walk {
-  margin-top: 60px;
+.home .stroll {
+  margin-top: 10px;
   border-top: 1px solid #97f9f9;
   padding: 50px 60px 50px 0;
-  display: flex;
   justify-content: center;
+  display: flex;
+  width: 100%;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .home .stroll {
     flex-direction: column-reverse;
     padding: 15px;
     margin: 0;
     width: 100%;
   }
 }
-.home .walk .walk-text {
-  width: 50%;
+.home .stroll .stroll-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
+  .home .stroll .stroll-text {
     width: 100%;
     padding-top: 10px;
   }
 }
-.home .walk .walk-text h3 {
+.home .stroll .stroll-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
-  margin-bottom: 26px;
+.home .stroll .stroll-text p {
+  margin-bottom: 13px;
 }
-.home .walk .walk-text .btn {
+.home .stroll .stroll-text .btn {
   color: white;
   background-color: #c59;
-  width: 100px;
+  width: 380px;
   border-radius: 5px;
-  height: 30px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,39 +402,49 @@ footer {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .stroll .stroll-text .btn {
     width: 100%;
     height: 75px;
   }
 }
-.home .walk .walk-text .btn:hover {
+.home .stroll .stroll-text .btn:hover {
   color: #c59;
-  background-color: white;
+  background-color: #a4def9;
 }
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
+.home .stroll .stroll-img {
+  display: flex;
+  width: 100%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .stroll .stroll-img {
     width: 100%;
     margin-left: 0;
   }
 }
-.home .walk .walk-img img {
+.home .stroll .stroll-img img {
   width: 100%;
-  height: auto;
+  height: 255px;
+  margin-left: 58px;
   border-radius: 10px;
 }
-.home .walk .take-flight {
+@media (max-width: 500px) {
+  .home .stroll .stroll-img img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.home .stroll .form-paragraph {
   padding: 10px;
 }
-.tile--css_animations__demo1 {
+.home .stroll .feedback {
+  padding: 10px;
+}
+.haunted-mansion {
   background-color: #a4def9;
   height: 100%;
   zoom: 210%;
 }
-.tile--css_animations__demo1 div {
+.haunted-mansion div {
   padding: 5px;
   font-size: 36px;
   font-family: monospace;
@@ -422,29 +453,29 @@ footer {
   text-shadow: 0 0 80px #cfbae1, 0 0 30px #c59fc9, 0 0 6px #c59;
   color: #c59;
 }
-.tile--css_animations__demo1 div p {
+.haunted-mansion div p {
   margin: 0;
 }
-.tile--css_animations__demo1 #status:hover {
+.haunted-mansion #status:hover {
   text-shadow: 0 0 200px #ffffff, 0 0 80px #97f, 0 0 6px #a4d;
 }
-.tile--css_animations__demo1 #message {
+.haunted-mansion #message {
   font-size: 20px;
 }
-.tile--css_animations__demo1 #message:hover {
+.haunted-mansion #message:hover {
   text-shadow: 0 0 100px #cfbae1, 0 0 40px #c59fc9, 0 0 8px #c59;
 }
-.tile--css_animations__demo1 #status {
+.haunted-mansion #status {
   color: #fff;
   text-shadow: 0 0 80px #ffffff, 0 0 30px #97f, 0 0 6px #a4d;
 }
-.tile--css_animations__demo1 #status span {
+.haunted-mansion #status span {
   animation: upper 11s linear infinite;
 }
-.tile--css_animations__demo1 #message span:nth-of-type(2) {
+.haunted-mansion #message span:nth-of-type(2) {
   animation: lower 10s linear infinite;
 }
-.tile--css_animations__demo1 #message span:nth-of-type(1) {
+.haunted-mansion #message span:nth-of-type(1) {
   text-shadow: none;
   opacity: 0.4;
 }
