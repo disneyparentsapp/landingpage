@@ -19,16 +19,6 @@
       .flex-center();
     }
 
-  .spacewalkers{
-    padding:10px 0;
-    .flex-center();
-    font-size: 50px;
-
-    @media @mobile {
-      padding: 10px 0;
-    }
-  }
-
   }
 
   .intro {
@@ -65,7 +55,6 @@
   .character-images {
     flex-wrap: wrap;
     .flex100();
-    border-top: 1px solid @main-border-color;
 
     @media @mobile{
       .tiana{
@@ -90,6 +79,7 @@
 
   .multiple-passes {
     padding: 15px;
+    border-top: 1px solid @main-border-color;
 
     h3 {
       margin-top: 11px;
@@ -97,6 +87,8 @@
 
     p {
       margin-top: 13px;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -167,7 +159,7 @@
         height: 255px;
         margin-left: 58px;
         border-radius: 10px;
-        
+
         @media @mobile{
           width: 100%;
           margin-left: 0;
