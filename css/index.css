@@ -286,6 +286,17 @@ footer {
     justify-content: center;
   }
 }
+.home .headerSW .spacewalkers {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+@media (max-width: 500px) {
+  .home .headerSW .spacewalkers {
+    padding: 10px 0;
+  }
+}
 .home .intro h2 {
   border-top: 1px solid #97f9f9;
   padding: 15px;
@@ -316,6 +327,7 @@ footer {
   flex-wrap: wrap;
   display: flex;
   width: 100%;
+  border-top: 1px solid #97f9f9;
 }
 @media (max-width: 500px) {
   .home .character-images .tiana {
@@ -337,15 +349,12 @@ footer {
 }
 .home .multiple-passes {
   padding: 15px;
-  border-top: 1px solid #97f9f9;
 }
 .home .multiple-passes h3 {
   margin-top: 11px;
 }
 .home .multiple-passes p {
   margin-top: 13px;
-  display: flex;
-  justify-content: center;
 }
 .home .stroll {
   margin-top: 10px;
