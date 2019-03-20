@@ -1,0 +1,34 @@
+.tabs {
+  .border-bottom-grey();
+  .flex(center, center);
+  .width-100();
+  background-color: @btn-bg-color;
+  }
+
+  .topics { 
+    .flex(space-around, center);
+    .width-100();
+    .title {
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: @header-font-color;
+    }
+    .tab {
+      .flex(none, center);
+      color: @btn-bg-color;
+      background-color: @nav-font;
+      font-size: 12px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .active-tab {
+      background-color: @btn-bg-color;
+      color: @nav-font;
+      border: 2px solid @ebony-clay;
+    }
+  }

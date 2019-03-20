@@ -6,6 +6,12 @@
   display: flex;
   width: 100%;
 }
+.width-100 {
+  width: 100%;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid #a4def9;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,8 +179,9 @@ p {
   margin: 0 auto;
 }
 .nav-bar {
-  padding: 10px 200px;
+  padding: 20px 80px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   font: #a4d;
@@ -195,7 +202,7 @@ input[type=text],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 18px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
@@ -274,14 +281,14 @@ footer {
     flex-direction: column;
   }
 }
-.home .headerSW {
+.home .headerHM {
   flex-direction: column;
   align-items: space-evenly;
   display: flex;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .headerSW {
+  .home .headerHM {
     display: flex;
     justify-content: center;
   }
@@ -298,8 +305,9 @@ footer {
   }
 }
 .home .intro h2 {
-  border-top: 1px solid #97f9f9;
   padding: 15px;
+  border-top: 5px solid #c1e0f7;
+  margin-top: 30px;
 }
 .home .intro h3 {
   margin-top: 0px;
@@ -349,6 +357,8 @@ footer {
 }
 .home .multiple-passes {
   padding: 15px;
+  border-top: 5px solid #c1e0f7;
+
 }
 .home .multiple-passes h3 {
   margin-top: 11px;
@@ -358,7 +368,7 @@ footer {
 }
 .home .stroll {
   margin-top: 10px;
-  border-top: 1px solid #97f9f9;
+  border-top: 5px solid #c1e0f7;
   padding: 50px 60px 50px 0;
   justify-content: center;
   display: flex;
@@ -390,7 +400,7 @@ footer {
   margin-bottom: 13px;
 }
 .home .stroll .stroll-text .btn {
-  color: white;
+  color: #c1e0f7;
   background-color: #c59;
   width: 380px;
   border-radius: 5px;
@@ -438,6 +448,156 @@ footer {
 }
 .home .stroll .feedback {
   padding: 10px;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carousel-image {
+  width: 100%;
+  display: none;
+}
+@media (max-width: 500px) {
+  .carousel {
+    width: 100%;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  color: #a4d;
+  background-color: #c1e0f7;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #c1e0f7;
+  background-color: #a4d;
+  border: 2px solid #c1e0f7;
+}
+.carousel .left-button {
+  top: 97%;
+  left: 5px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 97%;
+  right: 5px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  transform: translate(0, -50%);
+}
+.tabs {
+  border-bottom: 1px solid #a4def9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: #a4def9;
+}
+.topics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.topics .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #c59;
+}
+.topics .tab {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #a4def9;
+  background-color: #a4d;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.topics .tab:hover {
+  text-decoration: underline;
+}
+.topics .active-tab {
+  background-color: #a4def9;
+  color: #a4d;
+  border: 2px solid #c59;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+}
+@media (max-width: 500px) {
+  .cards-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+.cards-container .team {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.cards-container .cards {
+  border-bottom: 1px solid #a4def9;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  background-color: #a4def9;
+  margin-bottom: 16px;
+  padding: 24px;
+  width: 100%;
+}
+.cards-container .cards .headline {
+  font-size: 25px;
+  font-family: Didot, serif;
+}
+.cards-container .cards .author {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.cards-container .cards .author .img-container {
+  padding-right: 10px;
+  border-right: 1px solid #c59;
+  height: 60px;
+}
+.cards-container .cards .author .img-container img {
+  width: 60px;
+  height: 60px;
+}
+.cards-container .cards .author span {
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 .haunted-mansion {
   background-color: #a4def9;

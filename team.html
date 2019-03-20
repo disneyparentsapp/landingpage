@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>DisPA</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./Tabs/Tabs.js" async></script>
+  
+</head>
+
+<body>
+
+ <!-- navigation code here -->
+  <div class="container home">
+      <header class="headerHM">
+          <nav class="nav-bar">
+              <a class="nav-font" href="index.html">HOME</a>
+              <a class="nav-font" href="#">LOCATIONS</a>
+              <a class="nav-font" href="team.html">TEAM</a>
+              <a class="nav-font" href="#codeword">SIGN IN</a>
+            </nav>
+  
+        <div class="haunted-mansion">
+          <div>
+              <p id="status">WELCOME<span> DISNEY</span> PARENTS</p>
+              <p id="message">HAUNTED<span> MANSION</span><span> CHILDCARE</span> OPEN!</p>
+          </div>
+        </div>
+      </header>
+
+<!-- tabs -->
+    <div class="tabs">
+      <div class="topics">
+        <span class="title">THE ARTIST:</span>
+        <div data-tab="all" class="tab active-tab">ALL</div>
+        <div data-tab="brock" class="tab">BROCK</div>
+        <div data-tab="jawad" class="tab">JAWAD</div>
+        <div data-tab="patrick" class="tab">PATRICK</div>
+        <div data-tab="joseph" class="tab">JOSEPH</div>
+      </div>
+    </div>
+
+<!-- cards component --> 
+  <div class="cards-container">
+
+<!-- individual blocks --> 
+    <section class="team">
+      <div class="cards" data-tab="brock">
+          <div class="headline"><h2>Web UI Developer</h2></div>
+          <div class="author">
+            <div class="img-container">
+              <img class="student" src="img/brock.jpg" />
+            </div>
+            <span>Brock Falfas</span>
+          </div>
+        </div>
+    
+        <div class="cards" data-tab="patrick">
+          <div class="headline"><h2>Back-End Architect</h2></div>
+          <div class="author">
+            <div class="img-container">
+              <img class="student" src="img/patrick.jpg" />
+            </div>
+            <span>PATRICK MCNULTY</span>
+          </div>
+        </div>
+    
+        <div class="cards" data-tab="jawad">
+          <div class="headline"><h2>Front-End Architect</h2></div>
+            <div class="author">
+              <div class="img-container">
+                <img class="student" src="img/brock.jpg" />
+              </div>
+              <span>JAWAD HUSSEIN</span>
+            </div>
+          </div>
+
+          <div class="cards" data-tab="joseph">
+            <div class="headline"><h2>Project Manager</h2></div>
+            <div class="author">
+              <div class="img-container">
+                <img class="student" src="img/joseph.jpg" />
+              </div>
+              <span>JOSEPH STANFIELD</span>
+            </div>
+          </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

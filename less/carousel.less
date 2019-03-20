@@ -1,0 +1,49 @@
+.carousel {
+  width: 100%;
+  .flex-center;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+
+  .carousel-image {
+    width: 100%;
+    display: none;
+  }
+
+  @media @mobile {
+    width: 100%;
+  }
+  .left-button, .right-button {
+    .flex-center;
+    color: @nav-font;
+    background-color: @waterloo;
+    font-size: 40px;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &:hover {
+      color: @waterloo;
+      background-color: @nav-font;
+      border: 2px solid @waterloo;
+    }
+  }
+  .left-button {
+    top: 97%;
+    left: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    transform: translate(0, -50%);
+  }
+
+  .right-button {
+    top: 97%;
+    right: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    transform: translate(0, -50%);
+  }
+}

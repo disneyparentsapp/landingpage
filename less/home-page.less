@@ -10,7 +10,7 @@
       flex-direction: column;
     }
 
-  .headerSW{
+  .headerHM{
     flex-direction: column;
     align-items: space-evenly;
     .flex100();
@@ -34,8 +34,9 @@
   .intro {
 
     h2 {
-      border-top: 1px solid @main-border-color;
       padding: 15px;
+      border-top: 5px solid @footer-font-color;
+      margin-top: 30px;
     }
 
     h3 {
@@ -90,7 +91,7 @@
 
   .multiple-passes {
     padding: 15px;
-
+    border-top: 5px solid @footer-font-color;
     h3 {
       margin-top: 11px;
     }
@@ -102,7 +103,7 @@
 
   .stroll {
     margin-top: 10px;
-    border-top: 1px solid @main-border-color;
+    border-top: 5px solid @footer-font-color;
     padding: 50px 60px 50px 0;
     .flex-center();
     display: flex;
@@ -134,7 +135,7 @@
       }
 
       .btn {
-        .bcm(white, @header-font-color);
+        .bcm(@waterloo, @header-font-color);
         width:  380px;
         border-radius: 5px;
         height: 80px;
