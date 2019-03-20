@@ -274,14 +274,14 @@ footer {
     flex-direction: column;
   }
 }
-.home .headerSW {
+.home .headerHM {
   flex-direction: column;
   align-items: space-evenly;
   display: flex;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .headerSW {
+  .home .headerHM {
     display: flex;
     justify-content: center;
   }
