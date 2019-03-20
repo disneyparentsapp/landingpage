@@ -13,3 +13,18 @@
   display: flex;
   width: 100%;
 }
+
+.width-100 {
+  width: 100%;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid @btn-bg-color;
+}
+
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}
