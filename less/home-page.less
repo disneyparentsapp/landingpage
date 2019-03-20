@@ -1,33 +1,23 @@
 // Home Content
 .html{
   font-size: 62.5%;
-
+  font-family: "Dans-Disney-v5";
 }
+
 .home {
 
-   @media @mobile {
-      .flex100();
-      flex-direction: column;
-    }
+  @media @mobile {
+    .flex100();
+    flex-direction: column;
 
-  .headerHM{
+    .headerHM{
     flex-direction: column;
     align-items: space-evenly;
     .flex100();
-
+    }
     @media @mobile {
       .flex-center();
     }
-
-  .spacewalkers{
-    padding:10px 0;
-    .flex-center();
-    font-size: 50px;
-
-    @media @mobile {
-      padding: 10px 0;
-    }
-  }
 
   }
 
@@ -66,8 +56,7 @@
   .character-images {
     flex-wrap: wrap;
     .flex100();
-    border-top: 1px solid @main-border-color;
-
+    
     @media @mobile{
       .tiana{
         display: none;
@@ -98,6 +87,8 @@
 
     p {
       margin-top: 13px;
+      display: flex;
+      justify-content: center;
     }
   }
 
