@@ -284,28 +284,17 @@ footer {
     width: 100%;
     flex-direction: column;
   }
-}
-.home .headerHM {
-  flex-direction: column;
-  align-items: space-evenly;
-  display: flex;
-  width: 100%;
-}
-@media (max-width: 500px) {
   .home .headerHM {
+    flex-direction: column;
+    align-items: space-evenly;
     display: flex;
-    justify-content: center;
+    width: 100%;
   }
 }
-.home .headerHM .spacewalkers {
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-}
-@media (max-width: 500px) {
-  .home .headerHM .spacewalkers {
-    padding: 10px 0;
+@media (max-width: 500px) and (max-width: 500px) {
+  .home {
+    display: flex;
+    justify-content: center;
   }
 }
 .home .intro h2 {
@@ -339,7 +328,6 @@ footer {
   flex-wrap: wrap;
   display: flex;
   width: 100%;
-  border-top: 1px solid #97f9f9;
 }
 @media (max-width: 500px) {
   .home .character-images .tiana {
@@ -368,6 +356,8 @@ footer {
 }
 .home .multiple-passes p {
   margin-top: 13px;
+  display: flex;
+  justify-content: center;
 }
 .home .stroll {
   margin-top: 10px;
