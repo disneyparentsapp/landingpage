@@ -10,34 +10,36 @@
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-    }
+        padding-bottom: 10px;
+    
     .cards {
     .border-bottom-grey();
     .flex(space-between, none, column);
     background-color: @btn-bg-color;
-    margin-bottom: 16px;
-    padding: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
     width: 100%;
     .headline {
         font-size: 25px;
         font-family: Didot, serif;
+        margin-bottom: 5px;
     }
+
+    // .purple{
+    //     color: @river-bend;
+    // }
 
     .author {
         .flex(none, center);
-        margin-top: 15px;
-
-    .img-container {
-        padding-right: 10px;
-        border-right: 1px solid @ebony-clay;
-        height: 60px;
-    
-        img {
-            width: 60px;
-            height: 60px;
-            }
+        justify-content: space-around;
     }
-        span {
+    
+    .student {
+        width: 150px;
+        height: 150px;
+    }
+
+    span {
         padding-left: 10px;
         font-size: 12px;
         letter-spacing: 1px;
