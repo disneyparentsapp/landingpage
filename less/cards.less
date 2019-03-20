@@ -2,38 +2,47 @@
     .flex(space-evenly);
     .width-100();
     margin-top: 16px;
-    flex-wrap: wrap;
-    @media(min-width: 1200px){
-      width: 1200px;
+    @media @mobile {
+    .flex-center();
     }
-    .card {
-      .border-bottom-grey();
-      .flex(space-between, none, column);
-      background-color: @waterloo;
-      width: 380px;
-      margin-bottom: 16px;
-      padding: 24px;
-      .headline {
+
+    .team {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .cards {
+    .border-bottom-grey();
+    .flex(space-between, none, column);
+    background-color: @btn-bg-color;
+    margin-bottom: 16px;
+    padding: 24px;
+    width: 100%;
+    .headline {
         font-size: 25px;
         font-family: Didot, serif;
-      }
-      .author {
+    }
+
+    .author {
         .flex(none, center);
         margin-top: 15px;
-        .img-container {
-          padding-right: 10px;
-          border-right: 1px solid @river-bend;
-          height: 40px;
-          img {
-            width: 40px;
-          }
-        }
-        span {
-          padding-left: 10px;
-          font-size: 12px;
-          letter-spacing: 1px;
-          font-weight: bold;
-        }
-      }
+
+    .img-container {
+        padding-right: 10px;
+        border-right: 1px solid @ebony-clay;
+        height: 60px;
+    
+        img {
+            width: 60px;
+            height: 60px;
+            }
     }
-  }
+        span {
+        padding-left: 10px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        }
+    }
+    }
+}
