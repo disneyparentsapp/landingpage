@@ -1,25 +1,74 @@
 // Navigation code here
 .nav-bar{
-    padding: 20px 80px;
+    padding: 20px 80px 10px 80px;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    border-bottom: 3px solid @header-font-color;
     align-items: center;
     font: @nav-font;
+    background-color: #a4def9;
   
-
   @media @mobile{
     padding: 10px 50px;
     display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
   
-  .nav-font{
+  .nav-font {
     color: @nav-font;
-    font-size: 12px;
+    width:100%;
+    font-size: 20px;
+    text-align: center;
     text-decoration: none;
+    margin: 10px;
     cursor: pointer;
+    font-weight: bold;
+    border: 2px solid @header-font-color;
+    padding: 5px 5px 5px 5px;
+
+    @media @mobile {
+      padding: 10px 50px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      font-size: 25px;
+      align-items: center;
+    }
   }
+
+  .sideA {
+    padding: 5px 5px 5px 5px;
+
+    @media @mobile {
+      padding: 10px 50px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      font-size: 25px;
+      align-items: center;
+      border-top: 2px solid @ebony-clay;
+      border-bottom: 2px solid @ebony-clay;
+    }
+  }
+
+  .sideB {
+    padding: 5px 5px 5px 5px;
+
+        @media @mobile {
+          padding: 10px 50px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          font-size: 25px;
+          align-items: center;
+        border-bottom: 2px solid @ebony-clay;
+        }
+      }
+  
+
 
   //contact form
   input[type=text], select, textarea {
