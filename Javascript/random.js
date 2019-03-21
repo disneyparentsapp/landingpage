@@ -11,3 +11,7 @@ cards.forEach (card => {
         card.querySelector(".purple").style.color = "#a4d";
     })
 });
+
+document.getElementById("walt").addEventListener("click", function() {
+    alert("WELCOME TO THE HAPPIEST PLACE ON EARTH");
+});
