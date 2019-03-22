@@ -202,7 +202,6 @@ p {
 }
 .nav-font {
   color: #a4d;
-  width: 100%;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -210,6 +209,13 @@ p {
   cursor: pointer;
   font-weight: bold;
   border: 2px solid #c59;
+  height: 65px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-border-radius: 25px 1px 25px;
+  border-radius: 25px 1px 25px;
   padding: 5px 5px 5px 5px;
 }
 @media (max-width: 500px) {
@@ -217,8 +223,12 @@ p {
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     font-size: 25px;
+    height: 65px;
+    width: 100%;
+    -moz-border-radius: 25px 1px 25px;
+    border-radius: 25px 1px 25px;
     align-items: center;
   }
 }
@@ -230,11 +240,14 @@ p {
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
-    width: 100%;
     font-size: 25px;
     align-items: center;
     border-top: 2px solid #c59;
     border-bottom: 2px solid #c59;
+    height: 65px;
+    width: 100%;
+    -moz-border-radius: 25px 1px 25px;
+    border-radius: 25px 1px 25px;
   }
 }
 .sideB {
@@ -245,10 +258,13 @@ p {
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
-    width: 100%;
     font-size: 25px;
     align-items: center;
     border-bottom: 2px solid #c59;
+    height: 65px;
+    width: 100%;
+    -moz-border-radius: 25px 1px 25px;
+    border-radius: 25px 1px 25px;
   }
 }
 input[type=text],
